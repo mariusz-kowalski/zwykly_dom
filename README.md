@@ -2,7 +2,7 @@
 
 Pobierz ten dokument w formacie PDF
 
-![zwykły_dom.pdf](zwykły_dom.pdf)
+![zwykły_dom.pdf](zwykły_dom.pdf?raw=1)
 
 \clearpage
 
