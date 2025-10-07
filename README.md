@@ -1,12 +1,4 @@
-# Dom w Paniowicach
-
-działka:
-
-| Identyfikator | 022001_5.0013.213/13 |
-| ------------- | -------------------- |
-| Numer działki | 213/13               |
-
-miejscowość Paniowice
+# Zwykły Dom
 
 \clearpage
 
