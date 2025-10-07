@@ -1,1 +1,1 @@
-pandoc README.md -o dom_w_paniowicach.pdf
+pandoc README.md -o zwykły_dom.pdf
