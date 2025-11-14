@@ -1,0 +1,113 @@
+= Dom - szkic pomysłów
+
+== Dom
+
+=== Fundamenty
+
+Ława fundamentowa albo płyta fundamentowa, zależy od:
+
+- rachunek ekonomiczny uwzględniający oszczędności na ogrzewaniu w przypadku płyty fundamentowej.
+- ryzyka techniczne, płyta fundamentowa (wydaje mi się) niesie więcej potencjalnych błędów technicznych do popełnienia.
+- pewnie dużo zależy od tego co wyjdzie z badań geo.
+
+=== Ściany
+
+Moj pomysł na ściany to bloczki z keramzytobetonu, ocieplenie z wełny mineralnej, wewnątrz tynk gliniany. Argumenty jakie do mnie przemawiają (czy słuszne?) to:
+- zarządzanie wilgotnością w budynku - keramzyt łatwo i szybko pozbywa się wilgoci, mniejsze podciąganie kapilarne jeśli już do tego dojdzie. Czyli jeśli do dobrze rozumiem i jeśli to prawda to pomaga w regulacji wilgotności na co dzień i pomaga w sytuacjach awaryjnych (zalania).
+- dobra akustyka
+- bardzo dobra otwartość dyfuzyjna
+
+ale:
+
+Tak jeszcze doczytuję argumenty za silikatem, i:
+- z tą wilgocią jak jest dobrze zrobione to żaden materiał nie będzie zły.
+- izolacja akustyczna lepsza od keramzytu
+- otwartość dyfuzyjna gorsza ale nadal obecna
+- no i cena - istotnie taniej, ale to z opinii, bo nie umiem tego policzyć. Zastanawiam się czy w tym rozwiązaniu opartym o keramzyt nie kupuje się rozwiązania nieco lepszego za znacznie wyższą cenę.
+
+Stosując analogię motoryzacyjną: Nie chcę Łady, ale też nie chcę BMW, potrzebuję Subaru - zaawansowana technologia ale bez zbędnych drogich bajerów.
+
+=== Kondygnacje
+
+Jedna. Parter. Z mojego ostatniego planu domu wynika że potrzebuję około 159m² użytkowych. W zasadzie to rozchodzi się o to aby uzyskać tę powierzchnię użytkową jak najtaniej. Jeśli taniej będzie robiąc poddasze użytkowe to robimy poddasze użytkowe ale obstawiam że strop, schody, okna dachowe, przeniesienie jednej łazienki na poddasze, popsują ekonomię.
+
+=== Ogrzewanie
+
+Bardzo mi się podoba idea tych mat kapilarnych w ścianach, które powodują równomierną temperaturę w pomieszczeniach, a co za tym idzie komfort termiczny, a jako bonus możliwość chłodzenia ścian latem, o ile istnieć będzie możliwość schłodzenia cieczy, no ale to jakoś trzeba osiągnąć, gdyż klimatyzacja latem jest konieczna w jakiejś formie. Więc jakaś pompa ciepła będzie musiała być.
+
+Zastanawiałem się nad zastosowaniem pompy ciepła woda-woda z gruntowym wymiennikiem ciepła, tylko musiało by się to opłacać ekonomicznie uwzględniając koszty użytkowania, bo zdaje się wiąże się to z drogim odwiertem pionowym... zastanawia mnie to czemu nie można zastosować poziomego wymiennika i czy byłby tańszy?
+
+I jeśli dobrze to rozumiem to taka instalacja powinna dawać tanią w użytkowaniu klimatyzację latem, a zimą przynajmniej nieco tańsze ogrzewanie bo pompa ciepła będzie pracować z wysokim COP.
+
+Dodatkowa kwestia - bufor ciepła, czy jest sens? Czy byłby on w stanie zbuforować ciepło na podtrzymanie ogrzewania na dzień lub dwa?
+
+=== Wentylacja
+
+Na pewno wentylacja mechaniczna z rekuperacją.
+
+To nad czym się zastanawiam jako dodatek to powietrzny bezprzeponowy gruntowy wymiennik ciepła na podłożu zeolitowym. I tu nie chodzi tyle o oszczędności w ogrzewaniu, co właściwości zeolitu pod kątem filtrowania powietrza i regulacji jego wilgotności.
+
+Oszczędności w ogrzewaniu i chłodzeniu jakieś powinny być tyle że nie wiem jak to policzyć a jeśli mam zaoszczędzić 200zł rocznie to nie warto tego aspektu brac pod uwagę. Znów rozchodzi się o ekonomię, bo gdzieś obiło mi się o uszy że można stosować filtry zeolitowe jako po prostu filtry w systemie wentylacji, ale już nie mogę nic na ten temat znaleźć.
+
+=== Dach / poddasze nieużytkowe
+
+Dach musi być dwuspadowy bo tak każe MPZP, moim wymaganiem jest "tylko" to aby dało się go obciążyć panelami fotowoltaicznymi, połać od strony południowej w całości, a jeśli to możliwe to dobrze jakby dało się północną połać również obciążyć panelami fotowoltaicznymi, na razie nie planuję ale z kalkulatora PVGIS wynika że nawet z północnej połaci da się produkować istotne ilości energii, ale gdyby to miało oznaczać 2x droższy dach to nie warto tego robić.
+
+Co do poddasza nieużytkowego to nie do końca rozumiem jak bardzo jest ono nieużytkowe, czy można tam umieścić rekuperację czy jakieś inne urządzenia?
+
+=== Hydraulika
+
+Z rzeczy które może warto wspomnieć to: system natychmiastowej ciepłej wody to jest cyrkulacja ciepłej wody w łazienkach. I się zastanawiam czy można to przy okazji wykorzystać do wieszaków/suszarek na ręczniki? ale to chyba rury musiałyby akurat iść w tym miejscu.
+
+Wyjście na ogród.
+
+=== Elektryka
+
+Z racji tego że i tak przymierzam się do przewymiarowanej instalacji PV to być może w ogóle nie będę się podłączał do sieci, a jeśli musiałbym zapłacić dużo za przyłącze (gdyby sąsiedzi się nie śpieszyli z partycypowaniem w kosztach) to na pewno off-grid.
+
+Kwestią do rozwikłania pozostaje umiejscowienie magazynu energii. Zdaje się że obecnie prawo budowlane w praktyce uniemożliwia/mocno utrudnia umieszczenie go w budynku mieszkalnym, a tak czy inaczej wolałbym mieć go poza domem. Początkowo zakładałem że będzie on w garażu, alternatywnie w betonowej ziemiance.
+
+Skąd ta ziemianka? Magazyn nie powinien pracować w temperaturach poniżej 0°C, a z tego co rozumiem w takiej ziemiance powinno być zawsze powyżej 0°C. Latem powinno być tam chłodno, z tym że być może nie, bo jak umieszczę tam też serwery AI to raczej będzie problem z odprowadzaniem ciepła, przy czym te serwery i tak trzeba będzie chłodzić, a łatwiej będzie to zrobić w ziemiance niż w garażu i dużo łatwiej niż w budynku mieszkalnym.
+
+=== Sieć komunikacyjna
+
+Na pewno do każdego pomieszczenia będą przewody sieci LAN (ethernet) i gniazdka przy czym to musi być instalacja umożliwiająca wymianę kabli. Sieć też posłuży do systemu SmartHome i monitoringu. SmartHome i monitoring według autorskiego projektu.
+
+=== Okna
+
+Ciepłe trzyszybowe, ciepły i szczelny montaż. Ale wszystkie normalne, tzn. bez żadnych narożnych, trójkątnych, czy gigantycznych przesuwnych drzwi tarasowych.
+Opcjonalnie zewnętrzne żaluzje jak znajde w dobrej cenie, a jak nie to bez żaluzji/rolet.
+
+Bez okien dachowych.
+
+=== Taras
+
+Zadaszony. Moim pomysłem z dziedziny sci-fi to jest taras/oranżeria - czyli aby dało się go na zimę zamknąć szklanymi osłonami, a latem otworzyć, zdjąć osłony. Tyle że na chwilę obecną nie chcę na to poświęcać pieniedzy ewentualnie zaprojektować podstawowy taras z zadaszeniem tak aby dało się go w przyszłości przerobić na oranżerię.
+
+=== Udziwnienia i inne pomysły
+
+==== Ściana pomiędzy kuchnią a salonem.
+
+W kuchni przy ścianie oddzielającej kuchnię od salonu będzie blat przy którym można usiąść na taborecie barowym, blat na standardowej wysokości blatu roboczego, bo pewnie w tej roli będzie częściej wykorzystywany. Po drugiej stronie tej ściany, czyli w salonie będzie jego funkcjonalny odpowiednik, oczywiście stylem pasujący do salonu. Chciałbym aby w scianie był otwór taki aby te blaty tworzyły jedną powierzchnię. Ten otwór ma jednak możliwość zamkniecia za pomocą podnoszonej przegrody, takiej wysuwającej się z blatu ku górze. W zasadzie co potrzebuję od projektu o okno w tym miejscu, resztę wykonam z materiałów meblarskich.
+
+==== Wyjście dla kota
+
+Automatyczne wyjście dla kota, ale takie które nie wychładza wnętrza. Nie wiem czy to jest możliwe. Nasz kot, zimą, 10x dzienne wychodzi na zewnątrz i po chwili wraca, bo zimno.
+
+== Garaż
+
+Garaż to powinien być budynek z dwiema kondygnacjami, z piętrem, bez piwnicy. Garaż to może mało powiedziane, to ma być przydomowy osobisty warsztat, koniecznie musi być tam stanowisko z kanałem, drugie stanowisko być może z podnośnikiem warsztatowym, chodzi o to że jeśli to trzeba jakoś uwzględnić w projekcie.
+
+Wysokość parteru... Samochód terenowy może mieć wysokość nawet 2,3m no i fajnie było by móc go podnieść na 1m, co daje ~3.5m wysokości.
+
+Piętro, tu ma być siłownia, no chyba że coś zupełnie innego. Ale na razie siłownia.
+
+Zastanawiam się nad osobnym zewnętrznym wejściem na piętro.
+
+Cały ten budynek ma drugie dno, planuję go tak zaprojektować aby gdy już będę za stary aby z niego sensownie korzystać to chcę aby nadawał się pod najem pod jakieś komercyjne zastosowania...
+
+Dlatego zarówno piętro jak i parter muszą być wyposazone w toaletę, kabinę prysznicową i jakieś pomieszczenie mini kuchnia.
+
+=== Dach i nieszczęsne poddasze...
+
+Dach w powodu MPZP musi być dwuspadowy. Ze względu na orientację budynku, którego dłuższy bok wskazuje azymut jakieś 14° dach musi być "odwrotnie" niż zwykle, tak aby jedna z połaci była skierowana na południe.

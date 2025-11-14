@@ -1,0 +1,452 @@
+= PV
+
+dwa dachy + taras:
+1. garaż: 9.8m x 10.4m
+2. dom: 7.2m x 22m
+3. taras: 10m x 10m
+
+== Ile typowych paneli fotowoltaicznych da się zainstalować na tych dachach?
+
+Załóżmy typowy współczesny panel fotowoltaiczny o wymiarach około 1.72m x 1.14m (powierzchnia ok. 1.96m²). Poniżej obliczenia z założeniem prostego, prostokątnego ułożenia paneli na płaskiej projekcji dachu i bez zostawiania marginesów przy krawędziach (w praktyce realna liczba będzie mniejsza).
+
+=== Dach 1: 9.8m x 10.4m
+
+Przyjmujemy ułożenie paneli, w którym wymiar 1.14m leży wzdłuż 9.8m, a wymiar 1.72m wzdłuż 10.4m.
+
+- wzdłuż 9.8m:
+  - liczba paneli: floor(9.8 / 1.14) = floor(8.596...) = 8
+- wzdłuż 10.4m:
+  - liczba paneli: floor(10.4 / 1.72) = floor(6.047...) = 6
+
+Łącznie:
+
+- liczba paneli: 8 × 6 = 48
+
+Zostające niewykorzystane fragmenty dachu w każdym wymiarze:
+
+- wzdłuż 9.8m: 9.8m − 8 × 1.14m = 9.8m − 9.12m = 0.68m ≈ 68cm
+- wzdłuż 10.4m: 10.4m − 6 × 1.72m = 10.4m − 10.32m = 0.08m ≈ 8cm
+
+=== Dach 2: 7.2m x 22m
+
+Przyjmujemy ułożenie paneli, w którym wymiar 1.72m leży wzdłuż 7.2m, a wymiar 1.14m wzdłuż 22m.
+
+- wzdłuż 7.2m:
+  - liczba paneli: floor(7.2 / 1.72) = floor(4.186...) = 4
+- wzdłuż 22m:
+  - liczba paneli: floor(22 / 1.14) = floor(19.298...) = 19
+
+Łącznie:
+
+- liczba paneli: 4 × 19 = 76
+
+Zostające niewykorzystane fragmenty dachu w każdym wymiarze:
+
+- wzdłuż 7.2m: 7.2m − 4 × 1.72m = 7.2m − 6.88m = 0.32m ≈ 32cm
+- wzdłuż 22m: 22m − 19 × 1.14m = 22m − 21.66m = 0.34m ≈ 34cm
+
+=== Taras: 10m x 10m
+
+Załóżmy, że dach tarasu ma przykrywać obszar 10m x 10m i może minimalnie wystawać poza ten obszar, a całość powierzchni ma być zrobiona z paneli. Szukamy takiego prostokątnego ułożenia paneli, które całkowicie przykryje 10m x 10m (lub trochę więcej) przy użyciu jak najmniejszej liczby paneli.
+
+Przyjmujemy ułożenie paneli, w którym wymiar 1.72m leży wzdłuż jednego boku, a wymiar 1.14m wzdłuż drugiego.
+
+- wzdłuż boku dla wymiaru 1.72m:
+  - liczba paneli: ceil(10 / 1.72) = ceil(5.813...) = 6
+- wzdłuż boku dla wymiaru 1.14m:
+  - liczba paneli: ceil(10 / 1.14) = ceil(8.771...) = 9
+
+Łącznie:
+
+- liczba paneli: 6 × 9 = 54
+
+Wymiary „dachu z paneli”:
+
+- wzdłuż boku z panelami 1.72m: 6 × 1.72m = 10.32m
+- wzdłuż boku z panelami 1.14m: 9 × 1.14m = 10.26m
+
+Oznacza to, że dach z paneli przykryje w całości obrys 10m x 10m, a panele będą wystawać:
+
+- około 0.32m (32cm) w jednym kierunku,
+- około 0.26m (26cm) w drugim kierunku.
+
+=== Podsumowanie
+
+- garaż (9.8m x 10.4m): 48 paneli
+- dom (7.2m x 22m): 76 paneli
+- taras (10m x 10m, dach z paneli): 54 paneli
+
+Łącznie, przy przyjętych wymiarach typowego panelu i idealnym upakowaniu bez marginesów:
+
+- suma: 48 + 76 + 54 = 178 typowych paneli fotowoltaicznych
+
+== Ile energii wyprodukuje taka instalacja?
+
+=== Informacje.
+
+Połacie dachu są pochylone pod kątem 38°, skierowane 14° na zachód od kierunku na południe (czyli azymut 194°). Lokalizacja to okolice Wrocławia.
+
+=== Założenia dotyczące paneli
+
+W praktyce nowoczesne monokrystaliczne panele fotowoltaiczne mają zwykle moc w przedziale mniej więcej 370–450Wp. Różnice między nimi pod względem ilości energii produkowanej z 1kWp mocy zainstalowanej są niewielkie – głównie zmienia się po prostu moc pojedynczego panelu (czyli ile kWp „mieści się” na tej samej powierzchni).
+
+Do dalszych obliczeń przyjmijmy więc typowy panel o mocy:
+
+- 400Wp (0.4kWp) na panel
+
+Moc instalacji:
+
+- garaż (48 paneli): 48 × 0.4kWp = 19.2kWp
+- dom (76 paneli): 76 × 0.4kWp = 30.4kWp
+- taras (54 paneli): 54 × 0.4kWp = 21.6kWp
+- łączna moc (garaż + dom + taras): 19.2kWp + 30.4kWp + 21.6kWp = 71.2kWp
+
+=== Szacowana średnia dzienna produkcja w miesiącach – dom
+
+Korzystając z typowych danych nasłonecznienia dla okolic Wrocławia i przy założonym nachyleniu 38° oraz azymucie 194°, można przyjąć, że roczna produkcja energii wynosi około 1300kWh/kWp/rok (wartość raczej po „optymistycznej” stronie, przy dobrej ekspozycji i bez istotnego zacienienia).
+
+Dla połaci dachu domu o mocy 30.4kWp (76 paneli) suma miesięcznych wartości z poniższej tabeli daje około 36.9MWh rocznie. Poniżej zestawiono średnią dzienną i miesięczną produkcję energii dla tej połaci:
+
+[cols="1,1,1",options="header"]
+|===
+| Miesiąc
+| Średnia dzienna produkcja energii [kWh/dzień]
+| Średnia miesięczna produkcja energii [kWh/miesiąc]
+
+| Styczeń
+| 40
+| 1226
+
+| Luty
+| 69
+| 1918
+
+| Marzec
+| 102
+| 3145
+
+| Kwiecień
+| 138
+| 4132
+
+| Maj
+| 145
+| 4462
+
+| Czerwiec
+| 149
+| 4492
+
+| Lipiec
+| 144
+| 4507
+
+| Sierpień
+| 137
+| 4228
+
+| Wrzesień
+| 120
+| 3576
+
+| Październik
+| 83
+| 2580
+
+| Listopad
+| 50
+| 1533
+
+| Grudzień
+| 36
+| 1128
+|===
+
+Roczna produkcja energii (dom): około 36.9MWh (suma miesięcy ≈ 36 927kWh)
+
+=== Szacowana średnia dzienna produkcja w miesiącach – garaż
+
+Dla połaci dachu garażu o mocy 19.2kWp (48 paneli) korzystamy z tych samych założeń nasłonecznienia. Poniżej średnia dzienna i miesięczna produkcja energii tylko z garażu:
+
+[cols="1,1,1",options="header"]
+|===
+| Miesiąc
+| Średnia dzienna produkcja energii [kWh/dzień]
+| Średnia miesięczna produkcja energii [kWh/miesiąc]
+
+| Styczeń
+| 25
+| 774
+
+| Luty
+| 43
+| 1211
+
+| Marzec
+| 64
+| 1986
+
+| Kwiecień
+| 87
+| 2609
+
+| Maj
+| 90
+| 2818
+
+| Czerwiec
+| 94
+| 2837
+
+| Lipiec
+| 92
+| 2847
+
+| Sierpień
+| 86
+| 2671
+
+| Wrzesień
+| 75
+| 2258
+
+| Październik
+| 53
+| 1629
+
+| Listopad
+| 32
+| 968
+
+| Grudzień
+| 22
+| 712
+|===
+
+Roczna produkcja energii (garaż): około 23.3MWh (suma miesięcy ≈ 23 320kWh)
+
+Są to wartości uśrednione (w praktyce w konkretne dni będą duże odchylenia, a także różne lata mogą się między sobą zauważalnie różnić pogodą). Jeśli wybierzesz panele o nieco innej mocy (np. 370Wp czy 430Wp), można w prosty sposób przeskalować te liczby proporcjonalnie do całkowitej mocy instalacji w kWp.
+
+=== Dodatkowa produkcja gdyby obłożyć północną stronę dachu panelami
+
+[cols="1,1,1",options="header"]
+|===
+| Miesiąc
+| Średnia dzienna produkcja energii [kWh/dzień]
+| Średnia miesięczna produkcja energii [kWh/miesiąc]
+
+| Styczeń
+| 17.5 (82.5 / +27%)
+| 542 (2542 / +27%)
+
+| Luty
+| 32.3 (144.3 / +29%)
+| 903 (4032 / +29%)
+
+| Marzec
+| 58.2 (224.2 / +35%)
+| 1805 (6936 / +35%)
+
+| Kwiecień
+| 110.5 (335.5 / +49%)
+| 3316 (10057 / +49%)
+
+| Maj
+| 160.5 (395.5 / +68%)
+| 4974 (12254 / +68%)
+
+| Czerwiec
+| 186.1 (429.1 / +76%)
+| 5583 (12912 / +76%)
+
+| Lipiec
+| 173.2 (409.2 / +73%)
+| 5369 (12723 / +73%)
+
+| Sierpień
+| 125.4 (348.4 / +56%)
+| 3888 (10787 / +56%)
+
+| Wrzesień
+| 73.8 (268.8 / +38%)
+| 2214 (8048 / +38%)
+
+| Październik
+| 36.6 (172.6 / +27%)
+| 1134 (5343 / +27%)
+
+| Listopad
+| 20.3 (102.3 / +24%)
+| 608 (3109 / +24%)
+
+| Grudzień
+| 13.1 (71.1 / +22%)
+| 406 (2246 / +22%)
+|===
+
+Roczna dodatkowa produkcja energii (północna strona): w przybliżeniu 30.7MWh (suma miesięcy ≈ 30 742kWh).
+
+=== produkcja przez taras
+
+[cols="1,1,1",options="header"]
+|===
+| Miesiąc
+| Średnia dzienna produkcja energii [kWh/dzień]
+| Średnia miesięczna produkcja energii [kWh/miesiąc]
+
+| Styczeń
+| 14
+| 429
+
+| Luty
+| 30
+| 828
+
+| Marzec
+| 54
+| 1670
+
+| Kwiecień
+| 85
+| 2562
+
+| Maj
+| 101
+| 3122
+
+| Czerwiec
+| 109
+| 3263
+
+| Lipiec
+| 105
+| 3248
+
+| Sierpień
+| 89
+| 2769
+
+| Wrzesień
+| 67
+| 2014
+
+| Październik
+| 38
+| 1164
+
+| Listopad
+| 18
+| 547
+
+| Grudzień
+| 11
+| 339
+|===
+
+
+
+== Szacowane zapotrzebowanie energetyczne domu
+
+[cols="1,2,1",options="header"]
+|===przy
+| 20.4 (40 - 20.4 = 19.6)
+
+| Luty
+| 270 + 325 = 595
+| 21.3 (69 - 21.3 = 47.7)
+
+| Marzec
+| 234 + 325 = 559
+| 18.0 (102 - 18.0 = 84.0)
+
+| Kwiecień
+| 180 + 325 = 505
+| 16.8 (138 - 16.8 = 121.2)
+
+| Maj
+| 90 + 325 = 415
+| 13.4 (145 - 13.4 = 131.6)
+
+| Czerwiec
+| 36 + 325 = 361
+| 12.0 (149 - 12.0 = 137.0)
+
+| Lipiec
+| 18 + 325 = 343
+| 11.1 (144 - 11.1 = 132.9)
+
+| Sierpień
+| 18 + 325 = 343
+| 11.1 (137 - 11.1 = 125.9)
+
+| Wrzesień
+| 72 + 325 = 397
+| 13.2 (120 - 13.2 = 106.8)
+
+| Październik
+| 198 + 325 = 523
+| 16.9 (83 - 16.9 = 66.1)
+
+| Listopad
+| 198 + 325 = 523
+| 17.4 (50 - 17.4 = 32.6)
+
+| Grudzień
+| 180 + 325 = 505
+| 16.3 (36 - 16.3 = 19.7)
+
+| Rok (suma)
+| 1800 + 3900 = 5700
+| 15.6
+|===
+
+== Magazyn energii
+
+=== Założenia zimowe
+
+Przyjmujemy, że dom zużywa średnio około 21.3kWh energii elektrycznej dziennie w najgorszym zimowym miesiącu (ogrzewanie + c.w.u. + prąd bytowy), zgodnie z tabelą szacowanego zapotrzebowania. Dla instalacji off-grid chcemy mieć zapas energii na kilka kolejnych pochmurnych dni bez sensownego uzysku z PV.
+
+Zakładamy docelowo około 4 dni autonomii tylko z magazynu:
+
+- dzienne zużycie: 21.3kWh/dzień
+- liczba dni: 4
+- straty ładowania/rozładowania, elektronika itp.: przyjmujemy 20%
+
+Potrzebna użyteczna pojemność magazynu tylko pod dom:
+
+- 21.3kWh × 4 dni × 1.2 ≈ 102kWh
+
+Dla uproszczenia można przyjąć, że magazyn rzędu 100kWh pokrywa 4 dni zimowego zużycia domu przy założonych parametrach.
+
+=== Założenia letnie i serwerownia
+
+Latem sytuacja jest odwrotna: produkcja PV jest bardzo duża, a dom zużywa relatywnie mało energii. W najlepszych letnich miesiącach (np. sierpień) dach domu produkuje średnio około 137kWh/dzień, przy dziennym zużyciu domu około 11kWh/dzień.
+
+Rozważamy dodatkowy odbiornik w postaci przydomowej serwerowni AI, pracującej 24/7. Serwerownia powinna być elastyczna, tzn. część maszyn może być wyłączana przy słabszej produkcji, a w bardzo słoneczne dni można zwiększać obciążenie. Magazyn energii w takim układzie powinien:
+
+- pokrywać przede wszystkim zapotrzebowanie na noc (brak produkcji PV),
+- nie być przewymiarowany pod pełną moc serwerowni przez wiele kolejnych pochmurnych dni (w takich sytuacjach serwerownia miałaby ograniczać moc).
+
+Przykładowo, jeśli serwerownia zużywa średnio około 120kWh/dzień, a dom około 11kWh/dzień, to:
+
+- łączny dobowy pobór: około 131kWh/dzień
+- połowa z tego przypada na noc (brak słońca): około 65.5kWh
+- uwzględniając 20% strat: 65.5kWh × 1.2 ≈ 78.6kWh
+
+Oznacza to, że magazyn rzędu 80kWh wystarcza, aby w typowy letni dzień zasilić nocną pracę serwerowni i domu, zakładając, że w dzień serwerownia korzysta bezpośrednio z energii z PV i elastycznie dostosowuje obciążenie do bieżącej produkcji.
+
+=== Przewymiarowanie i żywotność magazynu
+
+Dla ogniw LiFePO4 typowe dane katalogowe dla 80% głębokości rozładowania (DoD) to rząd 6000 cykli, co przy codziennym pełnym cyklu daje około 16 lat pracy. Ograniczanie zakresu pracy (unikanie częstego schodzenia do bardzo niskich poziomów naładowania i ciągłego ładowania do 100%) sprzyja wydłużeniu życia magazynu, podobnie jak utrzymywanie sensownej temperatury pracy.
+
+Aby na co dzień wykorzystywać w przybliżeniu 80–85% pojemności i mieć margines bezpieczeństwa, sensowne jest lekkie przewymiarowanie magazynu. Zamiast projektować magazyn dokładnie na 100kWh, można przyjąć:
+
+- magazyn nominalny rzędu 120kWh,
+- typowy zakres pracy na co dzień: mniej więcej 20–95% stanu naładowania.
+
+Taki magazyn:
+
+- zapewnia około 4 dni autonomii zimą dla domu przy założonych parametrach,
+- pokrywa typową nocną pracę domu i serwerowni latem przy rozsądnie dobranym obciążeniu serwerowni,
+- pracuje z umiarkowanymi głębokościami rozładowania, co sprzyja dłuższej żywotności ogniw.
+
